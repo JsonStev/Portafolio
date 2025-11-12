@@ -192,6 +192,7 @@ body {
 
 .tituloProyectos{
     text-align: center;
+    justify-content: center;
     color: var(--btnatitlesColor);
     font-size: 2.5rem;
 }
@@ -214,14 +215,6 @@ body {
     text-decoration: none;
     color: var(--btnatitlesColor);
 }
-
-/* .cards img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-}  */
 
 .cards:hover {
       transform: translateY(-8px);
@@ -442,6 +435,7 @@ body {
         background-color: var(--btnatitlesColor);
         display: flex;
         flex-direction: row;
+        min-height: 90vh;
     }
 
     .cardAboutme{
@@ -471,6 +465,15 @@ body {
         padding: 30px;
     }
 
+    .cards{
+        padding: 60px;
+    }
+
+    .tituloProyectos{
+        text-align: center;
+        justify-content: ce;
+    }
+
     .Skills{
         display: flex;
         flex-direction: row;
@@ -495,9 +498,13 @@ body {
     }
 
     .contact-grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+        display: flex;
         gap: 20px;
-        padding: 30px;
+        padding: 20px;
     }
+
+    .contact-item{
+        padding: 70px;
+    }
+    
 }
