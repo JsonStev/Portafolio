@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor:#0B132B;
+    --secondColor:#1C2541;
+    --btnatitlesColor:#FFD700;
+    --maintextColor:#F0F8FF;
+    --secondtextColor:#A9B4C2;
+    scroll-behavior: smooth;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--mainColor);
+      display: flex;
+      flex-direction: column;
+    }
+
+.header{
+    position: sticky;
+    padding: 1.5em;
+    z-index: 997;
+    background-color: var(--secondColor);
+}
+
+.header h1{
+    text-align: center;
+    text-decoration: none;
+    color: var(--btnatitlesColor);
+}
+
+.Seccion{
+    min-height: 100vh;
+}
+
+.Container{
+    flex: 1;
+    display: grid;
+    padding: 1rem;
+    grid-template-areas: 
+    "Ask Ask"
+    "Opc1 Opc2";
+    gap: 0.5rem;
+    min-height: 90vh;
+}
+
+.Ask{
+    grid-area: Ask;
+    background: var(--btnatitlesColor);
+}
+
+.Opc1{
+    grid-area: Opc1;
+    background: var(--secondtextColor);
+}
+
+.Opc2{
+    grid-area: Opc2;
+    background: var(--secondColor);
+}
+
+.panel{
+    position: fixed;
+    z-index: 998;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    background-color: var(--Very-Dark-Cyan);
+    transition: transform .3s ease;
+    transform: translate(0, -100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.panel.is-active{
+    transform: translate(0,0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.panel-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Gray);
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondColor);
+}
+
+.menu a{
+    padding: 1em;
+    margin: 1.5em;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--btnatitlesColor);
+    transition: transform 0.3s ease;
+}
+
+.menu a:hover{
+    font-weight: bold;
+    color: var(--secondtextColor);
+    background-color: var(--main-modal-color);
+    transform: 0.3s ease;
+}
+
+/* About Me */
+
+.Conoceme{
+    background-color: var(--mainColor);
+}
+
+.tituloAboutme{
+    text-align: center;
+    color: var(--btnatitlesColor);
+    font-size: 2.5rem;
+}
+
+.cardAboutme h2{
+    color: var(--btnatitlesColor);
+}
+
+.cardAboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+    background-color: var(--secondColor);
+    color: var(--maintextColor);
+}
+
+.cardAboutme img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+} 
+
+.cardAboutme:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.parrafo{
+    color: var(--secondtextColor);
+    background-color: var(--mainColor);
+}
+
+/* Aboute Me */
+
+/* Proyectos */
+
+.Proyectos h2{
+    color: var(--btnatitlesColor);
+}
+
+.tituloProyectos{
+    text-align: center;
+    justify-content: center;
+    color: var(--btnatitlesColor);
+    font-size: 2.5rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+    background-color: var(--secondColor);
+    color: var(--maintextColor);
+}
+
+.cards a{
+    text-decoration: none;
+    color: var(--btnatitlesColor);
+}
+
+.cards:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Skills*/
+
+.Skills{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.tituloSkills{
+    text-align: center;
+    color: var(--btnatitlesColor);
+    font-size: 2.5rem;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    border: 2px solid var(--secondColor);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    background-color: var(--mainColor);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    background-color: var(--mainColor);
+    color: var(--maintextColor);
+}
+
+.card h4{
+    color: var(--maintextColor);
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.card span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+    /* Colores diferentes para cada tarjeta */
+    /* .card:nth-child(1) { background-color: #000; }
+    .card:nth-child(2) { background-color: #ff4757; }
+    .card:nth-child(3) { background-color: #2ed573; }
+    .card:nth-child(4) { background-color: #ffa502; }
+    .card:nth-child(5) { background-color: #3742fa; }
+    .card:nth-child(6) { background-color: #ff6b81; } */
+.Sub{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondColor);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    padding:5px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--mainColor);
+    color: var(--btnatitlesColor);
+}
+
+.Sub:hover {
+      transform: translateX(-8px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    }
+
+.Subhab{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondColor);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    padding:5px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--mainColor);
+    color: var(--btnatitlesColor);
+}
+
+.Subhab:hover{
+    transform: translateX(+8px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Contacto */
+
+.Contacto{
+    min-height: 80vh;
+}
+
+.titulo{
+    color: var(--btnatitlesColor);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.tituloContacto{
+    color: var(--btnatitlesColor);
+    text-align: end;
+    font-size: 2.5rem;
+    margin-right: 50px;
+}
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      width: 100%;
+      max-width: 800px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      border: 1px solid var(--btnatitlesColor);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Tamaños intercalados */
+
+    .gmail {
+      background-color: var(--secondColor);
+      width: 90%;
+      height: 100px;
+      color: var(--maintextColor);
+    }
+
+    .linkedin {
+      background-color: var(--btnatitlesColor);
+      width: 70%;
+      height: 80px;
+      color: var(--maintextColor);
+      border: 1px solid var(--secondtextColor);
+    }
+
+    .cv {
+      background-color: var(--secondColor);
+      width: 85%;
+      height: 100px;
+      color: var(--maintextColor);
+    }
+    /* .gmail { background-color: #EA4335; width: 100%; }
+    .linkedin { background-color: #0077B5; width: 80%; margin-left: auto; }
+    .cv { background-color: #00b894; width: 100%; } */
+
+    footer {
+      display: flex;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      background-color: var(--secondColor);
+      color: var(--btnatitlesColor);
+      text-align: center;
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+    }
+
+@media (max-width: 678px) {
+      h2 { font-size: 2rem; }
+      .contact-item { font-size: 1rem; height: 80px; }
+      .linkedin { width: 90%; margin-left: 30px; }
+
+    }
+
+@media(min-width:768px){
+    .Conoceme{
+        background-color: var(--btnatitlesColor);
+        display: flex;
+        flex-direction: row;
+        min-height: 90vh;
+    }
+
+    .cardAboutme{
+        display: grid;
+        margin: 10px;
+        grid-template-areas: 
+        "nombre parrafo"
+        ;
+    }
+
+    .cardAboutme h2{
+        text-align:left;
+    }
+
+    .nombre{
+        grid-area: nombre;
+    }
+
+    .parrafo{
+        grid-area: parrafo;
+    }
+
+    .Proyectos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .cards{
+        padding: 60px;
+    }
+
+    .tituloProyectos{
+        text-align: center;
+        justify-content: ce;
+    }
+
+    .Skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 2px solid var(--secondColor);
+    border-radius: 20px;
+    padding: 5px;
+    background-color: var(--mainColor);
+}
+
+    .footer{
+        margin-bottom: 0px;
+    }
+
+    .contact-grid{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .contact-item{
+        padding: 70px;
+    }
+    
+}
