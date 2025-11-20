@@ -459,11 +459,6 @@ body {
     }
 
     .cardAboutme.nombre {
-    background-image: url("/PXL_20240504_161617841~3.jpg");
-}
-
-
-    .cardAboutme.nombre {
     position: relative;
     width: 50%;
     border-radius: 12px;
@@ -477,10 +472,13 @@ body {
 }
 
 /* Oculta la imagen del HTML */
-.cardAboutme.nombre img {
+    .cardAboutme.nombre img {
     display: none;
-}
+    }   
 
+    .cardAboutme.nombre {
+    background-image: url("/PXL_20240504_161617841~3.jpg");
+}
 
 
     .cardAboutme h2{
