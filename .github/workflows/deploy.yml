@@ -1,0 +1,26 @@
+name: Venta de Motos
+
+# 1️⃣ Esto indica CUÁNDO debe ejecutarse
+on:
+  push:
+    branches:
+      - main   # Cada vez que se suba algo a 'main', se activará el flujo
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest   # GitHub usará una máquina Linux temporal
+
+    steps:
+      # 2️⃣ Primer paso: descargar tu código del repositorio
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 3️⃣ Segundo paso: usar una acción ya creada para publicar en gh-pages
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages      # rama donde se publicará el sitio
+          folder: '.'           # carpeta a publicar (en este caso, la raíz)
+          token: ${{ secrets.GITHUB_TOKEN }}
