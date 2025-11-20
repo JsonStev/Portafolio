@@ -224,7 +224,8 @@ body {
 /* Skills*/
 
 .Skills{
-    display: flex;
+    min-height: auto;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
 
