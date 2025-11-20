@@ -468,6 +468,7 @@ body {
     width: 50%;
     border-radius: 12px;
     display: flex;
+    text-align: center;
     justify-content: flex-end; /* texto abajo */
     padding: 20px;
     background-size: cover;
