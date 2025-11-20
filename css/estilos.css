@@ -164,13 +164,23 @@ body {
     color: var(--maintextColor);
 }
 
-.cardAboutme img{
+/* .cardAboutme img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 10px;
     object-fit: cover;
-} 
+}  */
+
+.cardAboutme img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
+}
+
 
 .cardAboutme:hover {
       transform: translateY(-8px);
@@ -447,6 +457,30 @@ body {
         "nombre parrafo"
         ;
     }
+
+    .cardAboutme.nombre {
+    background-image: url("/PXL_20240504_161617841~3.jpg");
+}
+
+
+    .cardAboutme.nombre {
+    position: relative;
+    width: 50%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end; /* texto abajo */
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Oculta la imagen del HTML */
+.cardAboutme.nombre img {
+    display: none;
+}
+
+
 
     .cardAboutme h2{
         text-align:left;
