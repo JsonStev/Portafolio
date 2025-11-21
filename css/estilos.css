@@ -477,7 +477,7 @@ body {
     }   
 
     .cardAboutme.nombre {
-    background-image: url("/Me.jpg");
+    background-image: url("./Me.jpg");
 }
 
 
