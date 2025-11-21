@@ -444,7 +444,7 @@ body {
 
 @media(min-width:768px){
     .Conoceme{
-        background-color: var(--btnatitlesColor);
+        background-color: var(--mainColor);
         display: flex;
         flex-direction: row;
         min-height: 90vh;
@@ -477,7 +477,7 @@ body {
     }   
 
     .cardAboutme.nombre {
-    background-image: url("PXL_20240504_161617841~3.jpg");
+    background-image: url("/PXL_20240504_161617841~3.jpg");
 }
 
 
