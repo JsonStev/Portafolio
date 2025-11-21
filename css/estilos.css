@@ -83,6 +83,7 @@ body {
     transform: translate(0, -100%);
     opacity: 0;
     visibility: hidden;
+    min-height: 100vh;
 }
 
 .panel.is-active{
@@ -114,6 +115,7 @@ body {
     align-items: center;
     text-align: center;
     background-color: var(--secondColor);
+    min-height: 100vh;
 }
 
 .menu a{
