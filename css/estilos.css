@@ -473,9 +473,9 @@ body {
 }
 
 /* Oculta la imagen del HTML */
-    .cardAboutme.nombre img {
+    /* .cardAboutme.nombre img {
     display: none;
-    }
+    } */
 
 
     .cardAboutme h2{
