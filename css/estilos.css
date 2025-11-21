@@ -469,13 +469,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./Imagenes/Yo.jpg");
+    background-image: url("../Imagenes/Yo.jpg");
 }
 
 /* Oculta la imagen del HTML */
-    /* .cardAboutme.nombre img {
+    .cardAboutme.nombre img {
     display: none;
-    } */
+    }
 
 
     .cardAboutme h2{
