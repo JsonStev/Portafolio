@@ -252,6 +252,7 @@ body {
 .card-back::-webkit-scrollbar {
     width: 5px;
 }
+
 .card-back::-webkit-scrollbar-thumb {
     background: var(--btnatitlesColor);
     border-radius: 5px;
@@ -263,9 +264,16 @@ body {
 
 .card-back {
     transform: rotateY(180deg);
+    font-size: 1.4rem;
 }
 
+.card-front h2 {
+    color: var(--btnatitlesColor);
+}
 
+.card-back h3 {
+    color: var(--btnatitlesColor);
+}
 
 .cards a {
     text-decoration: none;
@@ -280,7 +288,7 @@ body {
 
 .tech-list li {
     margin: 3px 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--secondtextColor);
 }
 
@@ -294,7 +302,7 @@ body {
 
 .card-links a {
     padding: 6px 12px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border: 1px solid var(--btnatitlesColor);
     border-radius: 20px;
     transition: background-color 0.3s;
@@ -477,6 +485,14 @@ body {
     color: var(--maintextColor);
 }
 
+.github {
+    background-color: var(--secondColor);
+    width: 80%;
+    height: 90px;
+    color: var(--maintextColor);
+    border: 1px solid var(--btnatitlesColor);
+}
+
 .linkedin {
     background-color: var(--btnatitlesColor);
     width: 70%;
@@ -503,6 +519,171 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+/* Inicio de Nexaria Labs */
+.proyecto-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: var(--maintextColor);
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: var(--btnatitlesColor);
+    text-decoration: none;
+    border: 1px solid var(--btnatitlesColor);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-volver-container {
+    text-align: left;
+}
+
+.btn-proyecto {
+    padding: 10px 25px !important;
+    font-size: 1.1rem !important;
+    text-decoration: none !important;
+    color: var(--btnatitlesColor) !important;
+}
+
+.btn-proyecto:hover {
+    background-color: var(--btnatitlesColor);
+    color: var(--mainColor) !important;
+}
+
+.btn-volver:hover {
+    background-color: var(--btnatitlesColor);
+    color: var(--mainColor);
+}
+
+.hero-titulo {
+    color: var(--btnatitlesColor);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero-centrado {
+    text-align: center;
+}
+
+.hero-subtitulo {
+    color: var(--secondtextColor);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tags-container span {
+    background-color: var(--secondColor);
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--btnatitlesColor);
+    font-size: 0.95rem;
+    color: var(--btnatitlesColor);
+}
+
+.proyecto-seccion {
+    background-color: var(--secondColor);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-seccion h2 {
+    color: var(--btnatitlesColor);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.proyecto-seccion p {
+    color: var(--secondtextColor);
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.proyecto-seccion ul {
+    color: var(--secondtextColor);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.proyecto-seccion li {
+    margin-bottom: 15px;
+}
+
+.proyecto-seccion li strong,
+.use-case-card strong {
+    color: var(--maintextColor);
+}
+
+.use-case-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+@media(min-width: 768px) {
+    .use-case-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.use-case-card {
+    background-color: var(--mainColor);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--secondColor);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.use-case-card h3 {
+    color: var(--btnatitlesColor);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.use-case-text {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--secondtextColor);
+    margin: 40px 0;
+    opacity: 0.3;
+}
+
+/* Fin de Nexaria Labs */
+
 
 @media (max-width: 678px) {
     h2 {
@@ -659,7 +840,8 @@ footer {
 
     .gmail,
     .linkedin,
-    .cv {
+    .cv,
+    .github {
         width: 100%;
         height: 80px;
     }
