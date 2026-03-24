@@ -274,6 +274,7 @@ body {
 
 .card-back h3 {
     color: var(--btnatitlesColor);
+    font-size: 1.3rem;
 }
 
 .cards a {
@@ -289,7 +290,7 @@ body {
 
 .tech-list li {
     margin: 3px 0;
-    font-size: 1.0rem;
+    font-size: 1rem;
     color: var(--secondtextColor);
 }
 
