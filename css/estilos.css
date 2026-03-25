@@ -496,15 +496,15 @@ body {
 }
 
 .linkedin {
-    background-color: var(--btnatitlesColor);
+    background-color: var(--secondColor);
     width: 70%;
     height: 80px;
     color: var(--maintextColor);
-    border: 1px solid var(--secondColor);
+    border: 1px solid var(--btnatitlesColor);
 }
 
 .cv {
-    background-color: var(--secondColor);
+    background-color: var(--btnatitlesColor);
     width: 85%;
     height: 100px;
     color: var(--maintextColor);
@@ -844,5 +844,13 @@ hr {
     .github {
         width: 100%;
         height: 100px;
+    }
+
+    .linkedin {
+        background-color: var(--btnatitlesColor);
+    }
+
+    .cv {
+        background-color: var(--secondColor);
     }
 }
