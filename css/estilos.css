@@ -290,7 +290,7 @@ body {
 
 .tech-list li {
     margin: 3px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--secondtextColor);
 }
 
@@ -465,7 +465,7 @@ body {
     border: 1px solid var(--btnatitlesColor);
     border-radius: 12px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -480,7 +480,7 @@ body {
 
 /* Tamaños intercalados */
 
-.gmail {
+.email {
     background-color: var(--secondColor);
     width: 90%;
     height: 100px;
@@ -488,11 +488,11 @@ body {
 }
 
 .github {
-    background-color: var(--secondColor);
+    background-color: var(--btnatitlesColor);
     width: 80%;
     height: 90px;
     color: var(--maintextColor);
-    border: 1px solid var(--btnatitlesColor);
+    border: 1px solid var(--secondColor);
 }
 
 .linkedin {
@@ -500,7 +500,7 @@ body {
     width: 70%;
     height: 80px;
     color: var(--maintextColor);
-    border: 1px solid var(--secondtextColor);
+    border: 1px solid var(--secondColor);
 }
 
 .cv {
@@ -819,32 +819,30 @@ hr {
     }
 
     .contact-grid {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
         padding: 20px;
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
     }
 
     .contact-item {
-        flex: 1;
-        height: 80px;
+        height: 100px;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        border-radius: 15px;
     }
 
-    .gmail,
+    .email,
     .linkedin,
     .cv,
     .github {
         width: 100%;
-        height: 80px;
+        height: 100px;
     }
 }
