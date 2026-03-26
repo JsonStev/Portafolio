@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: var(--mainColor);
     display: flex;
@@ -160,7 +162,8 @@ body {
     justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 20px;
-    margin: 30px;
+    margin: 30px auto;
+    width: 90%;
     padding: 20px;
     background-color: var(--secondColor);
     color: var(--maintextColor);
@@ -170,8 +173,12 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
     object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
+    backface-visibility: hidden;
     display: block;
 }
 
@@ -183,6 +190,7 @@ body {
 .parrafo {
     color: var(--secondtextColor);
     background-color: var(--mainColor);
+    font-size: 1.15rem;
 }
 
 /* Aboute Me */
@@ -737,8 +745,11 @@ hr {
         width: 250px;
         height: 250px;
         border-radius: 50%;
-        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
         object-fit: cover;
+        object-position: center;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: auto;
     }
 
     .cardAboutme h2 {
@@ -747,7 +758,7 @@ hr {
 
     .parrafo {
         padding: 20px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .Proyectos {
