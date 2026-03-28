@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css">
-    <title>Nexaria Labs - Mi Portafolio</title>
+    <title data-i18n="p1-title">Nexaria Labs - Mi Portafolio</title>
 </head>
 
 <body>
     <div class="Seccion">
         <div class="proyecto-container">
             <header class="hero-section hero-centrado">
-                <div class="btn-volver-container">
-                    <a href="index.html#Seccion2" class="btn-volver">← Volver al Portafolio</a>
+                <div class="header-controls">
+                    <div class="btn-volver-container">
+                        <a href="index.html#Seccion2" class="btn-volver" data-i18n="back-portfolio">← Volver al Portafolio</a>
+                    </div>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
                 </div>
 
                 <h1 class="hero-titulo">Nexaria Labs</h1>
-                <p class="hero-subtitulo">Transformando Operaciones Empresariales con Infraestructura y Automatización
+                <p class="hero-subtitulo" data-i18n="hero-tagline">Transformando Operaciones Empresariales con Infraestructura y Automatización
                     IA</p>
 
                 <div class="tags-container">
@@ -30,9 +36,9 @@
                 </div>
 
                 <div class="card-links">
-                    <a href="https://nexarialabs.com/" target="_blank" class="btn-sitio btn-proyecto">Visitar
+                    <a href="https://nexarialabs.com/" target="_blank" class="btn-sitio btn-proyecto" data-i18n="visit-site">Visitar
                         Sitio Web</a>
-                    <a href="https://github.com/JsonStev/NexariaWeb" target="_blank" class="btn-git btn-proyecto">Ver
+                    <a href="https://github.com/JsonStev/NexariaWeb" target="_blank" class="btn-git btn-proyecto" data-i18n="view-repo">Ver
                         Repositorio</a>
                 </div>
             </header>
@@ -40,15 +46,15 @@
             <hr>
 
             <section class="proyecto-seccion">
-                <h2>El Reto</h2>
-                <p>
+                <h2 data-i18n="challenge-title">El Reto</h2>
+                <p data-i18n="challenge-p1">
                     En el mercado actual, muchas empresas adoptan la Inteligencia Artificial de forma superficial. El
                     objetivo con
                     Nexaria Labs no era crear una simple interfaz conectada a una API comercial, sino construir una
                     verdadera
                     agencia de automatización capaz de desplegar soluciones completas, seguras y escalables desde cero.
                 </p>
-                <p>
+                <p data-i18n="challenge-p2">
                     El reto principal fue diseñar una identidad digital (Landing Page) que reflejara confianza, limpieza
                     y alto
                     nivel técnico, respaldada por una infraestructura robusta capaz de soportar las automatizaciones
@@ -58,30 +64,30 @@
             </section>
 
             <section class="proyecto-seccion">
-                <h2>Arquitectura y Despliegue Técnico</h2>
-                <p>
+                <h2 data-i18n="arch-title">Arquitectura y Despliegue Técnico</h2>
+                <p data-i18n="arch-p1">
                     Para garantizar el control total sobre los datos, la privacidad y la escalabilidad de los agentes
                     que
                     construimos, Nexaria Labs opera sobre una infraestructura propia y optimizada:
                 </p>
                 <ul>
-                    <li><strong>Frontend de Alto Rendimiento:</strong> Construido
+                    <li data-i18n="arch-li1"><strong>Frontend de Alto Rendimiento:</strong> Construido
                         con React y Vite para cargas ultrarrápidas. Interfaz estilizada con Tailwind CSS y animaciones
                         fluidas con Framer Motion para una experiencia de usuario moderna y minimalista.</li>
-                    <li><strong>Gestión de Servidores (VPS):</strong> Todo el
+                    <li data-i18n="arch-li2"><strong>Gestión de Servidores (VPS):</strong> Todo el
                         ecosistema de automatización corre en servidores propios, configurados y fortificados desde
                         cero.</li>
-                    <li><strong>Orquestación y Despliegue:</strong> Uso intensivo
+                    <li data-i18n="arch-li3"><strong>Orquestación y Despliegue:</strong> Uso intensivo
                         de Docker para la contenedorización de servicios y Coolify para la gestión de despliegues
                         continuos, asegurando entornos aislados y seguros.</li>
-                    <li><strong>Seguridad y DNS:</strong> Reglas estrictas de
+                    <li data-i18n="arch-li4"><strong>Seguridad y DNS:</strong> Reglas estrictas de
                         firewall y protección de red gestionada a través de Cloudflare para mitigar riesgos.</li>
                 </ul>
             </section>
 
             <section class="proyecto-seccion">
-                <h2>Casos de Uso y Soluciones Integradas</h2>
-                <p>
+                <h2 data-i18n="usecase-title">Casos de Uso y Soluciones Integradas</h2>
+                <p data-i18n="usecase-p1">
                     A través de la infraestructura de Nexaria Labs, desarrollamos e implementamos sistemas complejos que
                     resuelven
                     cuellos de botella empresariales reales:
@@ -89,8 +95,8 @@
 
                 <div class="use-case-grid">
                     <div class="use-case-card">
-                        <h3>Gestión Inteligente de Citas y Atención al Cliente</h3>
-                        <p class="use-case-text">
+                        <h3 data-i18n="usecase-card1-h3">Gestión Inteligente de Citas y Atención al Cliente</h3>
+                        <p class="use-case-text" data-i18n="usecase-card1-p">
                             Diseño de flujos de trabajo en <strong>n8n</strong> que
                             conectan la API de WhatsApp con bases de datos en
                             <strong>Supabase (PostgreSQL)</strong> y Google
@@ -98,10 +104,10 @@
                             intervención humana.
                         </p>
                     </div>
-
+ 
                     <div class="use-case-card">
-                        <h3>Privacidad y Modelos Open Source</h3>
-                        <p class="use-case-text">
+                        <h3 data-i18n="usecase-card2-h3">Privacidad y Modelos Open Source</h3>
+                        <p class="use-case-text" data-i18n="usecase-card2-p">
                             Para casos donde la privacidad de los datos es crítica (como información de pacientes o
                             clientes), la infraestructura permite la integración de modelos Open Source como
                             <strong>Llama</strong>, evitando la dependencia de APIs
@@ -112,8 +118,8 @@
             </section>
 
             <section class="proyecto-seccion">
-                <h2>Impacto y Evolución</h2>
-                <p>
+                <h2 data-i18n="impact-title">Impacto y Evolución</h2>
+                <p data-i18n="impact-p">
                     Nexaria Labs es la prueba de que el valor de la IA no está en el modelo mismo, sino en cómo se
                     integra dentro de
                     una arquitectura sólida. Este proyecto me ha permitido consolidar mis conocimientos como
@@ -126,9 +132,11 @@
         </div>
 
         <footer class="footer">
-            <h2>Jason Mejia 2026 ©</h2>
+            <h2 data-i18n="footer-name">Jason Mejia 2026 ©</h2>
         </footer>
     </div>
+    </div>
+    <script type="module" src="Scripts/nexaria.js"></script>
 </body>
 
 </html>

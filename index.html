@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,11 @@
 <body>
   <div id="Seccion1" class="Seccion">
     <header class="header">
-      <h1>Bienvenido a Mi Portafolio</h1>
+      <h1 data-i18n="welcome-title">Bienvenido a Mi Portafolio</h1>
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </header>
 
 
@@ -24,10 +28,10 @@
 
     <aside class="panel">
       <nav class="menu">
-        <a href="#Seccion1">Inicio</a>
-        <a href="#Seccion2">Proyectos</a>
-        <a href="#Seccion3">Tecnologias y Habilidades</a>
-        <a href="#Seccion4">Contacto</a>
+        <a href="#Seccion1" data-i18n="nav-home">Inicio</a>
+        <a href="#Seccion2" data-i18n="nav-projects">Proyectos</a>
+        <a href="#Seccion3" data-i18n="nav-skills">Tecnologias y Habilidades</a>
+        <a href="#Seccion4" data-i18n="nav-contact">Contacto</a>
       </nav>
     </aside>
 
@@ -36,12 +40,12 @@
       <div class="cardAboutme nombre">
         <img class="img" src="./Imagenes/CV Foto.jpg" alt="">
         <h2>Jason Mejia</h2>
-        <h4>Ingeniero en Desarrollo Web y Marketing Digital</h4>
+        <h4 data-i18n="hero-role">Ingeniero en Desarrollo Web y Marketing Digital</h4>
       </div>
 
       <div class="parrafo cardAboutme">
         <div>
-          <p>Apasionado por la tecnología e innovacion, Soy un Desarrollador Web Full-Stack con Experiencia
+          <p data-i18n="hero-description">Apasionado por la tecnología e innovacion, Soy un Desarrollador Web Full-Stack con Experiencia
             en Automatizaciones y Agentes de Inteligencia Artificial. Comprometido con la mejora
             continua, con interés en aplicar mis conocimientos en entornos profesionales,
             aportando eficiencia en procesos y valor en trabajos colaborativos..</p>
@@ -50,17 +54,17 @@
     </div>
 
     <div id="Seccion2" class="Seccion">
-      <h1 class="tituloProyectos">Proyectos</h1>
+      <h1 class="tituloProyectos" data-i18n="projects-title">Proyectos</h1>
       <br>
       <section class="Proyectos">
         <div class="cards">
           <div class="card-inner">
             <div class="card-front">
               <h2>Nexaria Labs</h2>
-              <p>Agencia de Automatizaciones</p>
+              <p data-i18n="p1-desc">Agencia de Automatizaciones</p>
             </div>
             <div class="card-back">
-              <h3>Tecnologias Utilizadas</h3>
+              <h3 data-i18n="tech-used">Tecnologias Utilizadas</h3>
               <ul class="tech-list">
                 <li>Vite</li>
                 <li>React</li>
@@ -70,9 +74,9 @@
                 <li>Lucide React</li>
               </ul>
               <div class="card-links">
-                <a href="https://github.com/JsonStev/NexariaWeb" target="_blank" class="btn-git">Ver en Github</a>
-                <a href="https://nexarialabs.com/" target="_blank" class="btn-sitio">Ver Web</a>
-                <a href="./NexariaLabs.html" target="_blank" class="btn-git">Ver Mas</a>
+                <a href="https://github.com/JsonStev/NexariaWeb" target="_blank" class="btn-git" data-i18n="view-github">Ver en Github</a>
+                <a href="https://nexarialabs.com/" target="_blank" class="btn-sitio" data-i18n="view-web">Ver Web</a>
+                <a href="./NexariaLabs.html" target="_blank" class="btn-git" data-i18n="view-more">Ver Mas</a>
               </div>
             </div>
           </div>
@@ -81,11 +85,11 @@
         <div class="cards">
           <div class="card-inner">
             <div class="card-front">
-              <h2>Agente de IA</h2>
-              <p>Asistente de Citas</p>
+              <h2 data-i18n="p2-title">Agente de IA</h2>
+              <p data-i18n="p2-desc">Asistente de Citas</p>
             </div>
             <div class="card-back">
-              <h3>Tecnologias Utilizadas</h3>
+              <h3 data-i18n="tech-used">Tecnologias Utilizadas</h3>
               <ul class="tech-list">
                 <li>n8n</li>
                 <li>LLMs</li>
@@ -94,7 +98,7 @@
                 <li>Google APIs(Integraciones)</li>
               </ul>
               <div class="card-links">
-                <a href="https://wa.me/50588684946" target="_blank" class="btn-git">Hablar con Agente</a>
+                <a href="https://wa.me/50588684946" target="_blank" class="btn-git" data-i18n="chat-agent">Hablar con Agente</a>
               </div>
             </div>
           </div>
@@ -104,10 +108,10 @@
           <div class="card-inner">
             <div class="card-front">
               <h2>SISIN</h2>
-              <p>Sistema de Inventario</p>
+              <p data-i18n="p3-desc">Sistema de Inventario</p>
             </div>
             <div class="card-back">
-              <h3>Tecnologias Utilizadas</h3>
+              <h3 data-i18n="tech-used">Tecnologias Utilizadas</h3>
               <ul class="tech-list">
                 <li>Node.js & Express</li>
                 <li>MongoDB & Mongoose</li>
@@ -117,8 +121,8 @@
                 <li>Arquitectura MVC</li>
               </ul>
               <div class="card-links">
-                <a href="https://github.com/JsonStev/Sistema-de-Inventario" target="_blank" class="btn-git">Ver
-                  en Github</a>
+                <a href="https://github.com/JsonStev/Sistema-de-Inventario" target="_blank" class="btn-git" data-i18n="view-github">Ver
+                   en Github</a>
               </div>
             </div>
           </div>
@@ -128,18 +132,18 @@
           <div class="card-inner">
             <div class="card-front">
               <h2>DrRodriguez</h2>
-              <p>Landing Page</p>
+              <p data-i18n="p4-desc">Landing Page</p>
             </div>
             <div class="card-back">
-              <h3>Tecnologias Utilizadas</h3>
+              <h3 data-i18n="tech-used">Tecnologias Utilizadas</h3>
               <ul class="tech-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
               <div class="card-links">
-                <a href="https://github.com/JsonStev/DrRodriguez" target="_blank" class="btn-git">Ver en Github</a>
-                <a href="https://jsonstev.github.io/DrRodriguez/" target="_blank" class="btn-sitio">Ver Web</a>
+                <a href="https://github.com/JsonStev/DrRodriguez" target="_blank" class="btn-git" data-i18n="view-github">Ver en Github</a>
+                <a href="https://jsonstev.github.io/DrRodriguez/" target="_blank" class="btn-sitio" data-i18n="view-web">Ver Web</a>
               </div>
             </div>
           </div>
@@ -149,11 +153,11 @@
 
 
     <div id="Seccion3" class="Seccion">
-      <h2 class="tituloSkills">Tecnologias y Habilidades</h2>
+      <h2 class="tituloSkills" data-i18n="skills-main-title">Tecnologias y Habilidades</h2>
 
       <div class="Skills">
         <section>
-          <h2 class="Sub">Tecnologías</h2>
+          <h2 class="Sub" data-i18n="skills-tech-title">Tecnologías</h2>
           <div class="section">
             <figure class="card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                 alt="HTML">
@@ -230,49 +234,49 @@
         </section>
 
         <section>
-          <h2 class="Subhab">Habilidades</h2>
+          <h2 class="Subhab" data-i18n="skills-soft-title">Habilidades</h2>
           <div class="section">
             <figure class="card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Comunicación">
-              <figcaption>Comunicación</figcaption>
+              <figcaption data-i18n="skill-comm">Comunicación</figcaption>
             </figure>
             <figure class="card"><img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png"
                 alt="Trabajo en equipo">
-              <figcaption>Trabajo en Equipo</figcaption>
+              <figcaption data-i18n="skill-team">Trabajo en Equipo</figcaption>
             </figure>
             <figure class="card"><img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Liderazgo">
-              <figcaption>Liderazgo</figcaption>
+              <figcaption data-i18n="skill-lead">Liderazgo</figcaption>
             </figure>
             <figure class="card"><img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Creatividad">
-              <figcaption>Creatividad</figcaption>
+              <figcaption data-i18n="skill-creative">Creatividad</figcaption>
             </figure>
             <figure class="card"><img src="https://cdn-icons-png.flaticon.com/512/1357/1357612.png"
                 alt="Resolución de problemas">
-              <figcaption>Resolver Problemas</figcaption>
+              <figcaption data-i18n="skill-problem">Resolver Problemas</figcaption>
             </figure>
             <figure class="card"><img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
                 alt="Gestión del tiempo">
-              <figcaption>Gestión del Tiempo</figcaption>
+              <figcaption data-i18n="skill-time">Gestión del Tiempo</figcaption>
             </figure>
             <figure class="card">
               <img src="https://api.iconify.design/fluent-emoji:robot.svg" alt="Arquitectura de Automatización">
-              <figcaption>Arquitectura de Automatización</figcaption>
+              <figcaption data-i18n="skill-auto-arch">Arquitectura de Automatización</figcaption>
             </figure>
             <figure class="card">
               <img src="https://api.iconify.design/fluent-emoji:desktop-computer.svg"
                 alt="Despliegue en Servidores (VPS)">
-              <figcaption>Servidores (VPS)</figcaption>
+              <figcaption data-i18n="skill-vps">Servidores (VPS)</figcaption>
             </figure>
             <figure class="card">
               <img src="https://api.iconify.design/fluent-emoji:brain.svg" alt="Prompt Engineering">
-              <figcaption>Prompt Engineering</figcaption>
+              <figcaption data-i18n="skill-prompt">Prompt Engineering</figcaption>
             </figure>
             <figure class="card">
               <img src="https://api.iconify.design/fluent-emoji:shield.svg" alt="Seguridad">
-              <figcaption>Seguridad</figcaption>
+              <figcaption data-i18n="skill-security">Seguridad</figcaption>
             </figure>
             <figure class="card">
               <img src="https://api.iconify.design/fluent-emoji:globe-with-meridians.svg" alt="DNS">
-              <figcaption>DNS</figcaption>
+              <figcaption data-i18n="skill-dns">DNS</figcaption>
             </figure>
           </div>
         </section>
@@ -280,8 +284,8 @@
     </div>
 
     <div id="Seccion4" class="Seccion Contacto">
-      <h2 class="titulo">Contacto</h2>
-      <p class="parrafo cardAboutme">¿Tienes una idea, un proyecto o una necesidad de automatización? Estoy aquí para
+      <h2 class="titulo" data-i18n="contact-title">Contacto</h2>
+      <p class="parrafo cardAboutme" data-i18n="contact-desc">¿Tienes una idea, un proyecto o una necesidad de automatización? Estoy aquí para
         ayudarte a transformar tus procesos y llevar tu negocio al siguiente nivel con soluciones de IA eficientes y
         personalizadas.</p>
       <br>
@@ -292,11 +296,11 @@
         <a href="https://github.com/JsonStev" target="_blank" class="contact-item github">💻 GitHub</a>
         <a href="https://www.linkedin.com/in/jason-mejia-964bb7269/" target="_blank" class="contact-item linkedin">💼
           LinkedIn</a>
-        <a href="./Jason Mejia CV.pdf" download class="contact-item cv">📄 Descargar CV</a>
+        <a href="./Jason Mejia CV.pdf" download class="contact-item cv" data-i18n="download-cv">📄 Descargar CV</a>
       </div>
     </div>
     <footer class="footer">
-      <h2>Jason Mejia 2026 ©</h2>
+      <h2 data-i18n="footer-name">Jason Mejia 2026 ©</h2>
     </footer>
 
     <script type="module" src="Scripts/index.js"></script>
