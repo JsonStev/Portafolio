@@ -18,16 +18,16 @@ export const languages = {
         "view-github": "Ver en Github",
         "view-web": "Ver Web",
         "view-more": "Ver Mas",
-        
+
         // Project 1: Nexaria Labs
         "p1-title": "Nexaria Labs",
         "p1-desc": "Agencia de Automatizaciones",
-        
+
         // Project 2: AI Agent
         "p2-title": "Agente de IA",
         "p2-desc": "Asistente de Citas",
         "chat-agent": "Hablar con Agente",
-        
+
         // Project 3: SISIN
         "p3-title": "SISIN",
         "p3-desc": "Sistema de Inventario",
@@ -40,7 +40,7 @@ export const languages = {
         "skills-main-title": "Tecnologias y Habilidades",
         "skills-tech-title": "Tecnologías",
         "skills-soft-title": "Habilidades",
-        
+
         // Skill names
         "skill-comm": "Comunicación",
         "skill-team": "Trabajo en Equipo",
@@ -99,18 +99,18 @@ export const languages = {
         "projects-title": "Projects",
         "tech-used": "Technologies Used",
         "view-github": "View on GitHub",
-        "view-web": "Live Demo",
+        "view-web": "Website",
         "view-more": "Read More",
-        
+
         // Project 1: Nexaria Labs
         "p1-title": "Nexaria Labs",
         "p1-desc": "Automation Agency",
-        
+
         // Project 2: AI Agent
         "p2-title": "AI Agent",
         "p2-desc": "Appointment Assistant",
         "chat-agent": "Chat with Agent",
-        
+
         // Project 3: SISIN
         "p3-title": "SISIN",
         "p3-desc": "Inventory System",
@@ -123,7 +123,7 @@ export const languages = {
         "skills-main-title": "Tech Stack & Skills",
         "skills-tech-title": "Technologies",
         "skills-soft-title": "Hard & Soft Skills",
-        
+
         // Skill names
         "skill-comm": "Communication",
         "skill-team": "Teamwork",

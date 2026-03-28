@@ -252,7 +252,7 @@ body {
     background-color: transparent;
     perspective: 1000px;
     margin: 0;
-    height: 300px;
+    height: 330px;
     width: 100%;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -333,7 +333,7 @@ body {
 }
 
 .tech-list li {
-    margin: 3px 0;
+    margin: 2px 0;
     font-size: 0.9rem;
     color: var(--secondtextColor);
 }
@@ -342,7 +342,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     margin-top: 10px;
 }
 
@@ -805,7 +805,7 @@ hr {
     }
 
     .cards {
-        height: 350px;
+        height: 380px;
         margin: 0;
     }
 
